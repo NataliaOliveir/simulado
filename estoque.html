@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestão de Estoque</title>
+</head>
+<body>
+
+  <h1>Gestão de Estoque</h1>
+
+  <form>
+    <label>Buscar Produto:</label><br>
+    <input type="text" placeholder="Digite o nome do produto">
+    <button type="submit">Buscar</button>
+  </form>
+
+  <h2>Lista de Produtos</h2>
+
+  <table border="1">
+    <tr>
+      <th>Produto</th>
+      <th>Quantidade</th>
+      <th>Validade</th>
+      <th>Mínimo</th>
+      <th>Situação</th>
+    </tr>
+  
+    <tr>
+      <td>Detergente Neutro</td>
+      <td>15</td>
+      <td>10/02/2026</td>
+      <td>10</td>
+      <td>OK</td>
+    </tr>
+  
+    <tr>
+      <td>Desinfetante Azul</td>
+      <td>5</td>
+      <td>20/12/2025</td>
+      <td>10</td>
+      <td>⚠️ Abaixo do mínimo</td>
+    </tr>
+  
+    <tr>
+      <td>Pano de Limpeza</td>
+      <td>30</td>
+      <td>15/05/2026</td>
+      <td>20</td>
+      <td>OK</td>
+    </tr>
+  </table>
+  
+
+  <h2>Registrar Movimentação</h2>
+  <form>
+    <label>Tipo:</label><br>
+    <select>
+      <option>Entrada</option>
+      <option>Saída</option>
+    </select><br><br>
+
+    <label>Produto:</label><br>
+    <input type="text"><br><br>
+
+    <label>Quantidade:</label><br>
+    <input type="number"><br><br>
+
+    <label>Responsável:</label><br>
+    <input type="text"><br><br>
+
+    <label>Data:</label><br>
+    <input type="date"><br><br>
+
+    <label>Observações:</label><br>
+    <textarea rows="3" cols="30"></textarea><br><br>
+
+    <button type="submit">Registrar</button>
+    <a href="index.html">Voltar</a>
+  </form>
+
+</body>
+</html>
